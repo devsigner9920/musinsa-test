@@ -1,0 +1,53 @@
+# 빌드 결과물
+build/
+target/
+out/
+*.jar
+*.war
+*.ear
+*.class
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.metadata/
+.settings/
+.project
+.classpath
+
+# 임시 파일
+*.tmp
+*.bak
+*.swp
+*.log
+*~
+
+# 로그 파일 및 폴더
+logs/
+*.log.*
+*.gz
+
+# 데이터베이스 파일 (H2)
+*.db
+*.mv.db
+*.trace.db
+data/
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+
+# Gradle 캐시
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Spring Boot DevTools
+.spring-boot-devtools.properties
+
+# 환경 설정 파일 (민감 정보 포함 시)
+application-local.yml
+application-prod.yml
