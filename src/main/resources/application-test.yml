@@ -1,0 +1,23 @@
+spring:
+  # 테스트 환경용 H2 Database 설정
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    
+  # JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+# 테스트 환경용 로깅 설정
+logging:
+  level:
+    org.springframework: WARN
+    com.musinsa.category: INFO
+    org.hibernate.SQL: WARN
+    
+# 캐시 비활성화 (테스트에서는 캐시 없이 동작)
+spring.cache.type: none 
