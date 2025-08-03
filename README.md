@@ -28,8 +28,8 @@
 
 ### 1. 프로젝트 클론
 ```bash
-git clone <repository-url>
-cd musinsa-category-system
+git clone https://github.com/devsigner9920/musinsa-test.git
+cd musinsa-test
 ```
 
 ### 2. 빌드 및 테스트
